@@ -1,0 +1,16 @@
+{
+  "allowJs": true,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@core/*" : ["src/Core/*"],
+      "@modules/*" : ["src/modules/*"],
+      "@shared/*" : ["src/shared/*"],
+      "@ui/*": ["src/shared/ui"],
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*"],
+}

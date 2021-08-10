@@ -1,0 +1,142 @@
+import Vue from 'vue';
+import Vuetify from 'vuetify/lib/framework';
+import pt from 'vuetify/es5/locale/pt';
+
+import HEALTH_ICONS from './Icons';
+
+Vue.use(Vuetify);
+
+export default new Vuetify({
+  rtl: false,
+  icons: {
+    values: HEALTH_ICONS,
+  },
+  lang: {
+    locales: { pt },
+    current: 'pt',
+  },
+  theme: {
+    options: {
+      customProperties: true,
+    },
+    themes: {
+      dark: false,
+      light: {
+        primary: {
+          base: '#1240ED',
+          lighten1: '#0052FF',
+          lighten2: '#4D86FF',
+          lighten3: '#80A9FF',
+          lighten4: '#B3CBFF',
+          lighten5: '#E6EEFF',
+          darken1: '#004AE6',
+          darken2: '#0039B3',
+          darken3: '#002980',
+          darken4: '#00194C',
+        },
+        primaryWithOpacity: {
+          base: '#99BAFF',
+          lighten1: '#F7F9FC',
+          lighten2: '#ADC8FF',
+          lighten3: '#C2D5FF',
+          lighten4: '#D6E3FF',
+          lighten5: '#EBF1FF',
+          darken1: '#85ACFF',
+        },
+        secondary: {
+          base: '#FE9526',
+          lighten1: '#FEA03C',
+          lighten2: '#FEB567',
+          lighten3: '#FFCA93',
+          lighten4: '#FFDFBE',
+          lighten5: '#FFF4E9',
+          darken1: '#E58622',
+          darken2: '#B2681B',
+          darken3: '#7F4B13',
+          darken4: '#331E08',
+        },
+        secondaryWithOpacity: {
+          base: '#FFD5A8',
+          lighten1: '#FFDDBA',
+          lighten2: '#FFE6CB',
+          lighten3: '#FFEEDC',
+          lighten4: '#FFF7EE',
+          darken1: '#FFCC97',
+        },
+        info: {
+          base: '#FFCB2F',
+          lighten1: '#FFD044',
+          lighten2: '#FFDB6D',
+          lighten3: '#FFE597',
+          lighten4: '#FFEFC1',
+          lighten5: '#FFFAEA',
+          darken1: '#E6B72A',
+          darken2: '#B38E21',
+          darken3: '#806618',
+          darken4: '#332909',
+        },
+        infoWithOpacity: {
+          base: '#FFEAAC',
+          lighten1: '#FFEEBC',
+          lighten2: '#FFF3CD',
+          lighten3: '#FFF7DE',
+          lighten4: '#FFFBEE',
+          darken1: '#FFE69B',
+        },
+        success: {
+          base: '#53D86A',
+          lighten1: '#64DC79',
+          lighten2: '#87E497',
+          lighten3: '#A9ECB5',
+          lighten4: '#CBF3D2',
+          lighten5: '#EEFBF0',
+          darken1: '#4BC25F',
+          darken2: '#3A974A',
+          darken3: '#21562A',
+          darken4: '#112B15',
+        },
+        successWithOpacity: {
+          base: '#BAEFC3',
+          lighten1: '#C8F3CF',
+          lighten2: '#D6F6DB',
+          lighten3: '#E3F9E7',
+          lighten4: '#F1FCF3',
+          darken1: '#ACECB7',
+        },
+        error: {
+          base: '#AD1E1E',
+          lighten1: '#FF3434',
+          lighten2: '#E62F2F',
+          lighten3: '#FF4848',
+          lighten4: '#FF7171',
+          lighten5: '#FF9A9A',
+          lighten6: '#FFC2C2',
+          lighten7: '#FFEBEB',
+          darken1: '#801A1A',
+          darken2: '#330A0A',
+        },
+        errorWithOpacity: {
+          base: '#FFAEAE',
+          lighten1: '#FFBEBE',
+          lighten2: '#FFCECE',
+          lighten3: '#FFDFDF',
+          lighten4: '#FFEFEF',
+          darken1: '#FF9E9E',
+        },
+        black: {
+          base: '#1A1A1A',
+          lighten1: '#313131',
+          lighten2: '#484848',
+          lighten3: '#5F5F5F',
+          lighten4: '#767676',
+          lighten5: '#8C8C8C',
+          lighten6: '#A3A3A3',
+          lighten7: '#BABABA',
+          lighten8: '#D1D1D1',
+          lighten9: '#E8E8E8',
+        },
+        textDefault: '#00194C',
+      },
+    },
+  },
+});
